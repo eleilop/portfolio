@@ -22,14 +22,15 @@
                                 contando el borde hacia adentro*/
 
 /* 3. ESTRUCTURA DEL LAYOUT GENERAL */
-body {background-color: #63351E;
+body {background-color: #BC7F4F;
     font-family: texto;
     font-size: 1.5em;
     text-align: justify;
+    margin: 0%;
 }
 
 #wrapper {background-color: #D8DBB1;
-    width: 80%;
+    width: 75%;
     margin: auto;
     padding: 3%;
 }
@@ -47,8 +48,16 @@ h1, h2 {font-family: titulo;
 h1 {font-size: 3.5em;}
 h2 {font-size: 2.5em;}
 
-img {width: 50%;
-     border-radius: 10%;
+/* 4. SECCIÓN A SECCIÓN */
+/***** Sección principal *****/
+img {width: 100%;
+    border-radius: 10%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+#cachopo {width: 50%;
+     border-radius: 15%;
      margin: 3% 25% 0%;
 }
 
@@ -57,7 +66,16 @@ blockquote{border-left: 5px solid #84404F;
            margin: 0 30%;
 }
 
-ul, ol {margin: 0 20%;}
-li {margin-bottom: 5%;}
+/***** INGREDIENTES *****/
 
-/* 4. SECCIÓN A SECCIÓN (si las hubiera) en detalle */
+ul, ol {margin: 0 20%;}
+li {padding-bottom: 1%;}
+.ingrediente {margin-bottom: 5%;
+    list-style-image: url('../images/lista.png');
+}
+
+dl {width: 70%;
+    margin: auto;
+}
+dt {font-weight: bold;}
+dd {margin-bottom: 3%;}
