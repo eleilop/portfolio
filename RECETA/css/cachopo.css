@@ -44,6 +44,7 @@ h1, h2 {font-family: titulo;
         margin-top: 40px;
         margin-bottom: 40px;
         color: #84404F;
+        text-shadow: 3px 3px 3px black;
 }
 h1 {font-size: 3.5em;}
 h2 {font-size: 2.5em;}
