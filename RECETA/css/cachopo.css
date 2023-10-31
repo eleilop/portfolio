@@ -80,3 +80,16 @@ dl {width: 70%;
 }
 dt {font-weight: bold;}
 dd {margin-bottom: 3%;}
+
+/***** RESPONSIVIDAD *****/
+
+@media only screen and (width<=1200px) {
+    #wrapper {width: 95%;}
+    blockquote {margin: 0 10%;}
+    #cachopo {width: 80%; margin: 0% 10% 0%;}
+    li {text-align: left;}
+    ul {margin: 0 10%;}
+    ol {margin: 0 5%;}
+    dd {text-align: left;}
+    dl {width: 90%;}
+}
