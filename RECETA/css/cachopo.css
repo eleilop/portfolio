@@ -93,3 +93,7 @@ dd {margin-bottom: 3%;}
     dd {text-align: left;}
     dl {width: 90%;}
 }
+
+@media only screen and (width<=700px) {
+    #wrapper {width: 100%;}
+}
