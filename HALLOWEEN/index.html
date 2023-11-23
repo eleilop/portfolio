@@ -8,9 +8,10 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <script src="./js/functions.js"></script>
 </head>
-<body>
-    
-
+<body onload="sound('scenario')">
+    <audio loop id="scenario" preload>
+        <source src="./sounds/scenario.mp3" type="audio/mp3">
+    </audio>
     <!-- PUMPKIN -->
     <div id="pumpkin" onmouseover="show('bats');sound('batsound')" onmouseout="hide('bats');silence('batsound')"></div>
     <img id="bats" src="./images/bats.gif" alt="">
@@ -42,7 +43,7 @@
 
     <!-- SCENARIO -->
     <h1>YOU ARE INVITED TO MY HALLOWEEN PARTY</h1>
-    <a href="./info.html">READ MORE</a>
+    <a href="./info.html">READ INFO</a>
     <p id="pumpkin-text">DON'T GO NEAR THE PUMPKIN</p>
     <p id="bat-text">BEWARE OF THE BAT</p>
     <p id="moon-text">DON'T LOOK AT THE MOON</p>

@@ -1,5 +1,5 @@
 /***********************************/
-/*    JavaScript para Halloween    */
+/*    JavaScript Halloween Party   */
 /***********************************/
 
 function show(element) {

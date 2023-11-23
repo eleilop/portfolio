@@ -1,0 +1,14 @@
+/*****************************************/
+/*    Stylesheet Info Halloween Party    */
+/*     Author: Eloy Leiva López          */
+/*     Version: 1.0                      */
+/*****************************************/
+
+/***** FONTS *****/
+@font-face {
+    font-family: titulos;
+    src: url(../fonts/RW-creepsville.ttf);
+}
+
+/***** GENERAL *****/
+* {box-sizing: border-box;}
