@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halloween Project</title>
+    <title>Halloween Party</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="./js/functions.js"></script>
 </head>
 <body>
-    <h1>COME TO MY HALLOWEEN PARTY</h1>
-    <a href="">LET'S GO!!</a>
+    
+
+    <!-- PUMPKIN -->
+    <div id="pumpkin" onmouseover="show('bats');sound('batsound')" onmouseout="hide('bats');silence('batsound')"></div>
+    <img id="bats" src="./images/bats.gif" alt="">
+    <audio loop id="batsound" preload>
+        <source src="./sounds/bats.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- MOON -->
+    <div id="moon" onmouseover="show('witch');sound('witchsound')" onmouseout="hide('witch');silence('witchsound')"></div>
+    <img id="witch" src="./images/witch.gif" alt="">
+    <audio loop id="witchsound" preload>
+        <source src="./sounds/witch.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- GRAVE -->
+    <img id="grave-img" src="./images/grave.png" alt="">
+    <div id="grave" onmouseover="show('zombie');sound('zombiesound')" onmouseout="hide('zombie');silence('zombiesound')"></div>
+    <img id="zombie" src="./images/zombie.png" alt="">
+    <audio loop id="zombiesound" preload>
+        <source src="./sounds/zombie.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- BAT -->
+    <div id="bat" onmouseover="show('vampire');sound('vampiresound')" onmouseout="hide('vampire');silence('vampiresound')"></div>
+    <img id="vampire" src="./images/vampire.png" alt="">
+    <audio loop id="vampiresound" preload>
+        <source src="./sounds/vampire.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- SCENARIO -->
+    <h1>YOU ARE INVITED TO MY HALLOWEEN PARTY</h1>
+    <a href="./info.html">READ MORE</a>
+    <p id="pumpkin-text">DON'T GO NEAR THE PUMPKIN</p>
+    <p id="bat-text">BEWARE OF THE BAT</p>
+    <p id="moon-text">DON'T LOOK AT THE MOON</p>
+    <p id="grave-text">DON'T GO NEAR THE GRAVE</p>
 </body>
 </html>

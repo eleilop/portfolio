@@ -10,28 +10,162 @@
     src: url(../fonts/RW-creepsville.ttf);
 }
 
+@keyframes sangrando {
+    0% {color: #D6621A; font-size: 3rem;}
+    50% {color: rgb(255, 0, 0); font-size: 6.5rem;}
+    to {color: #D6621A; font-size: 3rem;}
+}
+
 /***** GENERAL *****/
 * {box-sizing: border-box;}
 
-body {background-image: url(../images/wallpaper.jpg);
+body {
+    position: relative;
+    background-image: url(../images/scenario.jpg);
     background-size: cover;
     background-position: center;
-    height: 89vh;}
-
-h1 {font-family: titulos;
-    font-size: 9rem;
-    text-align: center;
-    color: #D6621A;
+    height: 89vh;
 }
 
-a {position: absolute;
+h1 {
+    font-family: titulos;
+    font-size: 3rem;
+    text-align: center;
+    color: #D6621A;
+    padding-top: 10%;
+    animation-name: sangrando;
+    animation-duration: 4s;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
     text-decoration: none;
     font-size: 2rem;
     color: #ffdf80;
     background-color: #D6621A;
-    border-radius: 25%;
+    border-radius: 20px;
     padding: 1%;
     transform: translate(-50%, -50%);
-    left: 49%;
-    top: 70%;
+    left: 10%;
+    top: 10%;
+    transition: 0.5s;
+}
+
+a:hover {background-color: #8b4011;}
+
+p {
+    position: absolute;
+    font-family: titulos;
+    font-size: 2rem;
+    color: #D6621A;
+    transition: 1s;
+}
+
+p:hover {
+    font-size: 2.5rem;
+    color: red;
+}
+
+/********** PUMPKIN **********/
+#pumpkin-text {
+    bottom: 32%;
+    left: 10%;
+}
+
+#pumpkin {
+    position: absolute;
+    width: 410px;
+    height: 290px;
+    left: 8.5%;
+    bottom: -5%;
+    border-radius: 50%;
+}
+
+#bats {
+    position: absolute;
+    visibility: hidden;
+    height: 600px;
+    width: 325px;
+    left: 12%;
+    bottom: 0%;
+}
+
+/********** BAT **********/
+#bat-text {
+    top: 35%;
+    right: 37%;
+}
+
+#bat {
+    position: absolute;
+    width: 175px;
+    height: 75px;
+    left: 52%;
+    top: 29%;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+#vampire {
+    position: absolute;
+    visibility: hidden;
+    width: 25%;
+    bottom: -5%;
+    left: 32%;
+}
+
+/********** MOON **********/
+#moon-text {
+    top: 0%;
+    left: 60%;
+}
+
+#moon {
+    position: absolute;
+    width: 305px;
+    height: 300px;
+    left: 42.5%;
+    top: -18%;
+    border-radius: 50%;
+}
+
+#witch {
+    position: absolute;
+    visibility: hidden;
+    width: 10%;
+    left: 45%;
+    top: -5%;
+}
+
+/********** GRAVE **********/
+#grave-text {
+    bottom: 30%;
+    right: 35%;
+}
+
+#grave-img {
+    position: absolute;
+    width: 15%;
+    left: 48%;
+    bottom: 2%;
+}
+
+#grave {
+    position: absolute;
+    width: 150px;
+    height: 195px;
+    bottom: 4.5%;
+    left: 51.5%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+#zombie {
+    position: absolute;
+    visibility: hidden;
+    width: 8%;
+    left: 51%;
+    bottom: 0%;
 }
