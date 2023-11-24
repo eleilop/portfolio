@@ -4,7 +4,7 @@
 /*     Version: 1.0                      */
 /*****************************************/
 
-/***** FONTS *****/
+/******************** FONTS ********************/
 @font-face {
     font-family: titulos;
     src: url(../fonts/RW-creepsville.ttf);
@@ -16,7 +16,7 @@
     to {color: #D6621A; font-size: 3rem;}
 }
 
-/***** GENERAL *****/
+/******************** GENERAL ********************/
 * {box-sizing: border-box;}
 
 body {
@@ -33,12 +33,13 @@ h1 {
     text-align: center;
     color: #D6621A;
     padding-top: 10%;
+    text-shadow: 0px 10px 4px #CE0000;
     animation-name: sangrando;
     animation-duration: 4s;
 }
 
 a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     position: absolute;
     text-decoration: none;
     font-size: 2rem;
@@ -59,6 +60,7 @@ p {
     font-family: titulos;
     font-size: 2rem;
     color: #D6621A;
+    text-shadow: 0px 5px 4px #CE0000;
     transition: 1s;
 }
 
@@ -67,7 +69,13 @@ p:hover {
     color: red;
 }
 
-/********** PUMPKIN **********/
+#scenario {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/******************** PUMPKIN ********************/
 #pumpkin-text {
     bottom: 32%;
     left: 10%;
@@ -91,7 +99,7 @@ p:hover {
     bottom: 0%;
 }
 
-/********** BAT **********/
+/******************** BAT ********************/
 #bat-text {
     top: 35%;
     right: 37%;
@@ -116,7 +124,7 @@ p:hover {
     left: 32%;
 }
 
-/********** MOON **********/
+/******************** MOON ********************/
 #moon-text {
     top: 0%;
     left: 60%;
@@ -139,7 +147,7 @@ p:hover {
     top: -5%;
 }
 
-/********** GRAVE **********/
+/******************** GRAVE ********************/
 #grave-text {
     bottom: 30%;
     right: 35%;
