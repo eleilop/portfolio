@@ -1,0 +1,61 @@
+/**********************************************************/
+/*          Hoja de estilo de cachopo.html                */
+/*          Autor: Eloy Leiva López                       */
+/*          Version: 1.0                                  */
+/*          Fecha: enero 2024                             */
+/*          Comentario: Ejercicio para portfolio          */
+/**********************************************************/
+
+/************************ FUENTES *************************/
+@font-face {
+    font-family: titulo;
+    src: url(../fonts/Greenfood.ttf);
+}
+
+@font-face {
+    font-family: texto;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
+/******************** CLASES NECESARIAS ********************/
+body {font-family: texto;}
+
+h1, h2 {
+    font-family: titulo;
+    text-shadow: 3px 3px 3px black;
+}
+
+.ingrediente {list-style-image: url('../images/lista.png');}
+
+
+/*********** CLASES PERSONALIZADAS DE BOOTSTRAP ************/
+.bg-brown-subtle {background-color: #BC7F4F;}
+
+.border-bottom-1 {border-bottom: 2px solid black;}
+
+.border-left-3 {border-left: 5px solid black;}
+
+.border-brown-subtle {border-color: #84404F;}
+
+.text-justify {text-align: justify;}
+
+.text-red-dark {color: #84404F;}
+
+.mx-30 {margin: 0 30%;}
+
+.mx-20 {margin: 0 20%;}
+
+.mb-15 {margin-bottom: 15%!important;}
+
+.my-10 {margin-top: 10%!important;}
+
+.ms-15 {margin-left: 15%;}
+
+
+/********************** MEDIA QUERIES **********************/
+.mw-600 {max-width: 600px;}
+
+.mw-500 {max-width: 500px;}
+
+.mw-100 {max-width: 100px;}
